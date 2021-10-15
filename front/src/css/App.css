@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@100&family=Jua&display=swap');
+
+.App {
+  text-align: center;
+  display: flex;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.sidebar {
+  width : 400px;
+  position: relative;
+  background-color: #050505;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.side_bottom {
+  width: 100%;
+  height: 80%;
+  background-image:url(https://i.pinimg.com/originals/94/48/f5/9448f51b318fcc653be53d726dc3b628.jpg);
+  top: 30;
+  left:0;
+  position:absolute;
+  background-size:100% 100%;
+  content:"";
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sidebar a:hover .sidebar-item{
+  background-color: #1565c0;
+  border-radius: 30px;
+}
+
+.sidebar-item {
+  width: 250px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.charts {
+  display: flex;
+  font-family: 'Jua', sans-serif;
+}
+
+.charts span{
+  font-size: 24px !important;
+  font-weight: normal;
+}
+
+.chart1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right:50px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+  border-radius: 10px;
+}
+
+.chart2 {
+  margin-top: 50px;
+  padding-right: 150px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+  border-radius: 10px;
+}
+
+.top_div2 {
+  width: 650px !important;
+  z-index: 1;
+  height: 70px; 
+  background-color:#f06292;
+  line-height: 70px; 
+  color: white; 
+  font-size: 24px !important;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px #f06292;
+  font-family: 'Jua', sans-serif !important;
+}
+
+.settle_cht {
+  padding-top: 60px;
+}
+
+.top_div1 {
+  width: 650px !important;
+  z-index: 1;
+  height: 70px; 
+  background-color:#1e88e5;
+  line-height: 70px; 
+  color: white; 
+  font-size: 24px !important;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px #1e88e5;
+  font-family: 'Jua', sans-serif;
+}
+
+.mem_tb {
+  width: 800px !important;
+  position: absolute;
+  top: 65px;
+  left: 45px;
+}
+
+.chart2 p {
+  font-family: 'Jua', sans-serif;
+}
+
+.chart2 text{
+  font-family: 'Jua', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.MuiTableHead-root th {
+  font-size: 20px !important;
+  font-weight: bolder !important;
+  font-family: 'Jua', sans-serif;
+}
+
+.MuiTableBody-root td {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 18px !important;
+}
+
+.top_div3  {
+  width: 900px !important;
+  z-index: 1;
+  height: 70px; 
+  background-color:#0ca678;
+  line-height: 70px; 
+  color: white; 
+  font-size: 24px !important;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px #0ca678;
+  font-family: 'Jua', sans-serif;
+}
+
+.mem_div {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 900px;
+  height: 450px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  position: relative;
+}
+
+.sit_list {
+  margin-bottom: 50px;
+  width: 1000px;
+  min-height: 500px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sit_list table {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+
+.top_div4 {
+  width: 1000px !important;
+  z-index: 1;
+  height: 70px; 
+  background-color:#26c6da;
+  line-height: 70px; 
+  color: white; 
+  font-size: 24px !important;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px #26c6da;
+  font-family: 'Jua', sans-serif;
+}
+
+.sit_add {
+  margin-bottom: 50px;
+  width: 1000px;
+  min-height: 250px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sit_add table {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 900px;
+}
+
+.top_div5 {
+  width: 1000px !important;
+  z-index: 1;
+  height: 70px; 
+  background-color:#673ab7;
+  line-height: 70px; 
+  color: white; 
+  font-size: 24px !important;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px #673ab7;
+  font-family: 'Jua', sans-serif;
+}
+
+.qna_list {
+  margin-bottom: 50px;
+  width: 1300px;
+  min-height: 250px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qna_list table {
+  width: 1200px;
+}
+
+.top_div6 {
+  width: 1300px !important;
+  z-index: 1;
+  height: 70px; 
+  background-color:#ef5350;
+  line-height: 70px; 
+  color: white; 
+  font-size: 24px !important;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px #ef5350;
+  font-family: 'Jua', sans-serif;
+}
+
+.faq_flex {
+  display: flex;
+  margin-top: 100px;
+}
+
+.sibal {
+  width: 30px !important;
+}
+
+.faq_list {
+  margin-bottom: 50px;
+  width: 800px;
+  min-height: 250px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.faq_list table {
+  width: 700px;
+  margin-top: 60px;
+}
+
+.faq_cen2 {
+  width: 400px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq_body td {
+  width: 150px !important;
+  text-align: center;
+}
+
+.faq_body input[type=text] {
+  width: 100px !important;
+}
+
+.top_div7  {
+  width: 800px !important;
+  z-index: 1;
+  height: 70px; 
+  background-color:#ff7043;
+  line-height: 70px; 
+  color: white; 
+  font-size: 24px !important;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px #ff7043;
+  font-family: 'Jua', sans-serif;
+}
+
+.faq_add {
+  margin-bottom: 50px;
+  width: 600px;
+  min-height: 250px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq_add table {
+  width: 500px;
+  margin-top: 60px;
+}
+
+.faa_left  {
+  font-size: 20px !important;
+  font-weight: bolder !important;
+  font-family: 'Jua', sans-serif !important;
+}
+
+.faq_head th{
+  width: 120px !important;
+  text-align: center;
+}
+
+.top_div8  {
+  width: 600px !important;
+  z-index: 1;
+  height: 70px; 
+  background-color:#ffca28;
+  line-height: 70px; 
+  color: white; 
+  font-size: 24px !important;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px #ffca28;
+  font-family: 'Jua', sans-serif;
+}
+
+
+.home {
+  margin-top: 100px;
+  width: 1500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.pet_tb {
+  width: 900px !important;
+}
+
+.fee_head th{
+  width: 150px !important;
+  text-align: center;
+}
+
+.fee_list td {
+  width: 150px;
+  text-align: center;
+}
+
+.fee_modi td {
+  text-align: center;
+  width: 150px;
+}
+
+.fee_modi input {
+  text-align: center;
+  width: 60px;
+  font-size: 14px;
+}
+
+.fee_modi input[type=number] {
+  text-align: center;
+  width: 80px;
+  font-size: 14px;
+}
+
+.fee_modi .btn {
+  width: 86px !important;
+  font-size: 11px;
+} 
+
+.fee_cen {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fee_cen input{
+  width: 60px;
+}
+
+header {
+  background-color: whitesmoke !important;
+  color: #282c34 !important;
+}
+
+.btn2 {
+  padding: 10px 20px !important;
+}
+
+.header_span {
+  font-size: larger;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
