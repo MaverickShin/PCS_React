@@ -1,3 +1,4 @@
 # PCS_ReactR
 React로 개발한 관리자 페이지 입니다.
-/n start 방법 : npm run dev
+
+start 방법 : npm run dev
